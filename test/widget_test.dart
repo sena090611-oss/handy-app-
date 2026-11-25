@@ -6,7 +6,7 @@ void main() {
   testWidgets('Muestra los controles de autenticacion', (tester) async {
     await tester.pumpWidget(const HandyApp());
 
-    expect(find.text('Handy'), findsOneWidget);
+    expect(find.bySemanticsLabel('Handy'), findsOneWidget);
     expect(find.text('Iniciar sesión'), findsOneWidget);
     expect(find.text('Registrarse'), findsOneWidget);
     expect(find.text('Correo electrónico'), findsOneWidget);
